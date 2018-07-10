@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:background="@drawable/amrit" n1:paddingLeft="16.0dip" n1:paddingTop="16.0dip" n1:paddingRight="16.0dip" n1:paddingBottom="16.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:id="@id/upperlayer" n1:background="#ffe10909" n1:paddingLeft="16.0dip" n1:paddingTop="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+            <TextView n1:textAppearance="@style/TextAppearance.AppCompat.Button" n1:textColor="#ffffffff" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Amrit Indo Canadian Academy" />
+        </LinearLayout>
+        <RelativeLayout n1:orientation="vertical" n1:id="@id/signinlayer" n1:background="#ffeae4e4" n1:layout_width="300.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="75.0dip">
+            <TextView n1:textAppearance="?android:textAppearanceLarge" n1:id="@id/textView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="@string/SignInText" n1:singleLine="true" />
+            <TextView n1:id="@id/UserNameText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:text="Username" n1:layout_below="@id/textView" />
+            <EditText n1:id="@id/username" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="20.0dip" n1:ems="10" n1:width="200.0dip" n1:layout_below="@id/UserNameText" n1:inputType="textEmailAddress" />
+            <TextView n1:id="@id/PasswordText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:text="Password" n1:layout_below="@id/username" />
+            <EditText n1:id="@id/password" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="56.0dip" n1:ems="10" n1:width="200.0dip" n1:layout_below="@id/PasswordText" n1:layout_alignLeft="@id/username" n1:inputType="textEmailAddress" n1:layout_alignStart="@id/username" />
+            <Button n1:textColor="#ffffffff" n1:id="@id/button" n1:background="#ffff0000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:text="@string/SignInButtonText" n1:layout_below="@id/password" />
+            <Button n1:textColor="#ffffffff" n1:id="@id/register" n1:background="#ff2bff00" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:text="Register" n1:layout_below="@id/button" />
+            <TextView n1:textColor="#ff4a8ef2" n1:id="@id/forgotpassword" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:text="Forgot Password ?" n1:layout_below="@id/register" />
+        </RelativeLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/detailslayer" n1:background="#ffffffff" n1:layout_width="300.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="75.0dip" n1:layout_below="@id/signinlayer">
+            <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textColor="#ffff0000" n1:id="@id/name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:text="Amrit Indo Canadian Academy" n1:singleLine="false" n1:layout_below="@id/signinlayer" />
+            <TextView n1:textColor="#ff000000" n1:id="@id/address" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:text="(Affiliated to CBSE) Address: Ladian, Ludhiana - 141008 (Punjab) \n Contact:- 0161-6550181, 0161-2801422 \n Email ID: amritindoca@yahoo.co.in \n" n1:layout_below="@id/name" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:background="#ffffffff" n1:layout_width="300.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="30.0dip" n1:layout_below="@id/detailslayer">
+            <TextView n1:textColor="#ff000000" n1:id="@id/design" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:text="Designed and Developed By:" />
+            <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textColor="#ff008af4" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="JSR Technologies Pvt Ltd" />
+            <TextView n1:textColor="#ff008af4" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="Address: #102 Jagjit Nagar, Pakhowal Road, Ludhiana-141 001 (Punjab) \n Contact No.:- +91 8054923300 \n E-Mail ID: mail@jsrsolutions.com \n Copyright  Amrit Indo Canadian Academy 2014 \n" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
